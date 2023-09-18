@@ -9,6 +9,8 @@ print(f"請輸入第一個邊長：{c}")
 if(a+b>c and a+c>b and b+c>a):
     if(a == b == c):
         print("這是一個正三角形")
+    elif(a==b or b==c or a==c):
+        print("這是一個等腰三角形")
     else:
         print("這是一個一般三角形")
 else:
