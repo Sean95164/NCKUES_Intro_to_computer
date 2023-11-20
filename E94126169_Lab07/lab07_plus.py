@@ -68,5 +68,5 @@ class Shiba(Dogs):
 
 shiba = Shiba(5, 70) 
 shiba.printf(20, 10, 3) 
-shiba.mood_constraint(90) 
+shiba.mood_constraint(300) 
 
