@@ -11,14 +11,16 @@ def computer_choice():
 def game(user):
     computer = computer_choice()
 
-    print(f"\ncomputer : {computer}  user : {user}")
+    print(f"\ncomputer : {computer}  user : {user}\n")
 
     if(user == computer): # 平手的情況
         return "It's Tie !"
     elif (user, computer) in [("r", "s"), ("s", "p"), ("p", "r")]: # 玩家贏的情況
         return "You win !"
+    elif (user, computer) in [("s","r"), ("p","s"), ("r", "pr")]:
+        return "Conputer win !" # 電腦贏的情況
     else:
-        return "Computer win !" #剩餘的情況為電腦贏的情況
+        return "輸入有誤，請重新出拳" #輸入錯誤的情況
 
 def define_route(app):
 
