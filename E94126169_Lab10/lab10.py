@@ -20,7 +20,7 @@ def game(user):
     elif (user, computer) in [("s","r"), ("p","s"), ("r", "pr")]:
         return "Conputer win !" # 電腦贏的情況
     else:
-        return "輸入有誤，請重新出拳" #輸入錯誤的情況
+        return "Wrong input ! try again" #輸入錯誤的情況
 
 def define_route(app):
 
