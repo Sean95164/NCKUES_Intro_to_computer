@@ -17,7 +17,7 @@ def game(user):
         return "It's Tie !"
     elif (user, computer) in [("r", "s"), ("s", "p"), ("p", "r")]: # 玩家贏的情況
         return "You win !"
-    elif (user, computer) in [("s","r"), ("p","s"), ("r", "pr")]:
+    elif (user, computer) in [("s","r"), ("p","s"), ("r", "p")]:
         return "Conputer win !" # 電腦贏的情況
     else:
         return "Wrong input ! try again" #輸入錯誤的情況
