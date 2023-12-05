@@ -21,8 +21,8 @@ def define_route(app, data):
         print(f"\nuser input data : {newdata}\n")
         print(f"Data on server : {data}\n") 
 
-        # 重新回到主頁面, url_for() 的參數為 function name, 會傳回該函式所在 route 的絕對路徑
-        return redirect(url_for("index"))
+        # 重新回到主頁面
+        return render_template("lab10_plus.html", data=data)
 
     # 建立 /reset/<confirm> route, 其中 confirm 可傳入 fumction 作為轉換為變數
     @app.route("/reset/<confirm>")
