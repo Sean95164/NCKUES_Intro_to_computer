@@ -70,10 +70,10 @@ def Monly_temperature_figure2(data, ax):
 
     
 def main():
-    data = read_data(filename="Temperature.txt")
+    data = read_data(filename=r"E94126169_Lab12\data\Temperature.txt")
     fig, ax = plt.subplots(1,2, figsize=(15,6))
     Monly_temperature_figure1(data, ax[0])
     Monly_temperature_figure2(data, ax[1])
-    fig.savefig("lab12_03.png")
+    fig.savefig(r"E94126169_Lab12\lab12_03.png")
 
 main()

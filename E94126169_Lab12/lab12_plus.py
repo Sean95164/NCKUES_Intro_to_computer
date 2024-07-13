@@ -80,7 +80,7 @@ def calculate_and_set_legend(data, ax, line):
 
 def main():
     # 進行資料處理
-    data = read_data(filename="oddExperiment.txt")
+    data = read_data(filename=r"E94126169_Lab12\data\oddExperiment.txt")
     # 創造子圖
     fig, ax = plt.subplots()
     # 繪製散佈圖
@@ -92,6 +92,6 @@ def main():
     # 計算 LSE 和製作 legend
     calculate_and_set_legend(data,ax,line)
     # 儲存圖檔
-    fig.savefig("lab12_plus.png")
+    fig.savefig(r"E94126169_Lab12\lab12_plus.png")
     
 main()
